@@ -40,9 +40,9 @@ function bs1(a, tar, l, h) {
 
     // tar... a[m]....
     if (a[m] > tar) 
-        return bs1(a, tar, l, m - 1); 
+      return bs1(a, tar, l, m); // around m, lo is small, so m, not m-1
 
-    // a[m]..tar...
+    // a[m]...tar...
     return bs1(a, tar, m + 1, h); 
   }
 

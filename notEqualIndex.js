@@ -12,12 +12,12 @@ function bs(arr, tar) {
     }
     
     if(tar > arr[m]) {
-      s = m + 1; // because s=0;
+      s = m + 1; // around m, s is small so m+1
     }
 
     // end, exact index
     if(tar < arr[m]) {
-      e = m; // not m-1, because arr.length???
+      e = m; // around m, arr.length is big, so just m
     }
   }
   
